@@ -1,10 +1,11 @@
-package com.example.myapplication
+package com.example.myapplication.Acitivity
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
 import android.os.Handler
+import com.example.myapplication.R
 
 class splashActivity : AppCompatActivity(){
     private var mDelayHandler: Handler? = null

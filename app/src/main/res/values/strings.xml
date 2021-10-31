@@ -4,11 +4,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <array name="hassan">
         <item>
-            completed
+            complete
         </item>
         <item>
             parser completed
-    </item>
+        </item>
         <item>
             no yet
         </item>

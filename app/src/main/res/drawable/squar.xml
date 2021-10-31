@@ -4,8 +4,8 @@
         <shape android:shape="rectangle">
             <solid android:color="#FDE9D3"/>
             <size android:width="309dp"/>
-            <size android:height="450dp" />
-            <corners android:radius="20dp"/>
-        </shape>
+            <size android:height="55dp" />
+            <corners android:radius="100dp"/>
+            </shape>
     </item>
 </selector>

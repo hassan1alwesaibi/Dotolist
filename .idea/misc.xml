@@ -5,14 +5,33 @@
       <map>
         <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/circle.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/circle1.xml" value="0.12314814814814815" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/circle2.xml" value="0.12314814814814815" />
         <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/clock.xml" value="0.1671111111111111" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/clockback.xml" value="0.16936936936936936" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.16018518518518518" />
         <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.16203703703703703" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.16018518518518518" />
         <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/ic_baseline_library_add_24.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/ic_launcher_background.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/rectangle.xml" value="0.16018518518518518" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/squar.xml" value="0.16018518518518518" />
         <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/drawable/square.xml" value="0.1671111111111111" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout-large/fragment_list.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout-large/splash_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout-normal/fragment_list.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout-normal/splash_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout-small/fragment_list.xml" value="0.22" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout-small/splash_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout-xlarge/fragment_list.xml" value="0.12" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout-xlarge/splash_layout.xml" value="0.1" />
         <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout/activity_main.xml" value="0.10054347826086957" />
-        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout/fragment_list.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout/item_layout.xml" value="0.33905146316851664" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout/fragment_add.xml" value="0.1" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout/fragment_add_task.xml" value="0.19712793733681463" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout/fragment_addtask.xml" value="0.1" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout/fragment_list.xml" value="0.1" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout/fragment_title.xml" value="0.22" />
+        <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout/item_layout.xml" value="0.3620146904512067" />
         <entry key="..\:/Users/Hassan/Desktop/finall welcome/app/src/main/res/layout/splash_layout.xml" value="0.14666666666666667" />
       </map>
     </option>

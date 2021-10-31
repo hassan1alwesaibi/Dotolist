@@ -1,48 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/day_textView"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/text"
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="147dp">
+        android:layout_height="41dp"
+        android:background="@drawable/squar"
+        android:orientation="horizontal">
 
         <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="65dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:id="@+id/done_spinner"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
             android:entries="@array/hassan" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="209dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/title_textView"
+            android:layout_width="181dp"
+            android:layout_height="30dp"
             android:text="Task"
-            android:textColor="#6f4c5b"
+            android:textColor="@color/text"
             android:textSize="16sp" />
 
         <ImageButton
-            android:id="@+id/imageButton4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/delete_Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#CC9E7777"
             app:srcCompat="@drawable/ic_baseline_delete_24" />
 
         <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="33dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/edit_Button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="#CC9E7777"
             app:srcCompat="@drawable/ic_baseline_edit_24" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="35dp"
-            android:layout_height="wrap_content" />
+            android:id="@+id/checkBox"
+            android:layout_width="37dp"
+            android:layout_height="37dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/circle"
+            android:backgroundTint="#CC9E7777"
+            app:srcCompat="@drawable/ic_baseline_map_24" />
+
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
