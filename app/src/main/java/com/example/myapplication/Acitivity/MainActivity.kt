@@ -2,6 +2,7 @@ package com.example.myapplication.Acitivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.myapplication.R
@@ -16,5 +17,7 @@ class MainActivity : AppCompatActivity() {
         TasksRepository.init(this)
 
     }
+
+    fun RadioButtonClicked(view: View) {}
 }
 

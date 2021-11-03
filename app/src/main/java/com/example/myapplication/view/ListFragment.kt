@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
+import android.widget.Spinner
 import android.widget.TextView
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -46,15 +48,37 @@ private val tasksViewModel:TascksViewModel by activityViewModels()
 //--------------------------------------------------------------------------------
         val tasksRecyclerView:RecyclerView = view.findViewById(R.id.tasks_RecyclerView)
         val addbutton:FloatingActionButton = view.findViewById(R.id.Add_Button)
-        val tasksListAdapter = TasksListAdapter(tacksList,tasksViewModel,requireActivity().supportFragmentManager)
-         tasksRecyclerView.adapter = tasksListAdapter
-        tasksViewModel.taskslist.observe(viewLifecycleOwner,{
-            it?.let{
-                tacksList.clear()
-                tacksList.addAll(it)
-                tasksListAdapter.notifyDataSetChanged()
+        val tasksListAdapter = TasksListAdapter(tacksList,tasksViewModel,requireActivity().supportFragmentManager,requireContext())
+        val filterSpinner :Spinner = view.findViewById(R.id.filter_Spinner)
+
+
+
+
+        filterSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                tasksViewModel.category = filterSpinner.selectedItem.toString()
+                tasksViewModel.getTasks().observe(viewLifecycleOwner,{
+                    it?.let{
+                        tacksList.clear()
+                        tacksList.addAll(it.sortedBy { it.calendar })
+                        tasksListAdapter.notifyDataSetChanged()
+                    }
+                })
             }
-        })
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+
+            }
+
+        }
+
+         tasksRecyclerView.adapter = tasksListAdapter
+
 
         addbutton.setOnClickListener{
             findNavController().navigate(R.id.action_listFragment_to_addTaskFragment)

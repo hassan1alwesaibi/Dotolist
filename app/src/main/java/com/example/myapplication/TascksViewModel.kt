@@ -5,6 +5,7 @@ import android.app.Dialog
 import android.os.Bundle
 import android.widget.DatePicker
 import androidx.fragment.app.DialogFragment
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -14,13 +15,16 @@ import kotlinx.coroutines.launch
 import java.util.*
 
 class TascksViewModel:ViewModel() {
+
     private val tasksRepository = TasksRepository.get()
     var taskslist = tasksRepository.getTasks()
     var selectedTasks = MutableLiveData<TasksListModel>()
+   var category:String = "All"
     //----------------------------------------------------------------------------------------------------------
-    fun addTask(title: String, subtitle: String, calendar: String ){// , inStock: Boolean, sprinner: String, day: String) {
+
+    fun addTask(title: String, subtitle: String, calendar: String ){
         viewModelScope.launch {
-            tasksRepository.addTasks(TasksListModel(title, subtitle ,true,"no yet",calendar))
+            tasksRepository.addTasks(TasksListModel(title, subtitle ,"no yet",calendar,"All"))
         }
     }
 //--------------------------------------------------------------------------------------------------------
@@ -35,6 +39,13 @@ class TascksViewModel:ViewModel() {
             tasksRepository.deleteTasks(tasksListModel)
         }
 //----------------------------------------------------------------------------------
+    }
+    fun getTasks() : LiveData<List<TasksListModel>> {
+        if (category.equals("All"))
+            return tasksRepository.getTasks()
+        else
+            return tasksRepository.filter(category)
+
     }
 }
 

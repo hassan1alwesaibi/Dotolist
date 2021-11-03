@@ -10,5 +10,8 @@
     <color name="text">#6f4c5b</color>
     <color name="v">#f9aca7</color>
     <color name="start">#F9D5A7</color>
-
+    <color name="lead">#80A2A9AF</color>
+    <color name="green">#80AFEAAA</color>
+    <color name="red">#80FF0000</color>
+    <color name="no">#FDE9D3</color>
 </resources>

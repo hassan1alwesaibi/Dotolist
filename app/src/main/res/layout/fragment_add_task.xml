@@ -6,8 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".view.AddTaskFragment">
 
+    <TextView
+        android:id="@+id/day_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/save_Button"
+        android:id="@+id/edit_save_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
@@ -19,12 +32,11 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
 
-
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -33,7 +45,7 @@
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/calendar_Button"
+            android:id="@+id/edit_calendar_Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -42,9 +54,9 @@
             app:backgroundTint="#CC9E7777" />
 
         <EditText
-            android:id="@+id/title_editText"
-            android:layout_width="wrap_content"
-            android:layout_height="84dp"
+            android:id="@+id/edit_title_editText"
+            android:layout_width="333dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/squar"
             android:ems="10"
@@ -56,8 +68,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="376dp"
-        android:layout_height="654dp"
+        android:layout_width="372dp"
+        android:layout_height="636dp"
         android:layout_margin="20dp"
         android:background="@drawable/square"
         android:orientation="vertical"
@@ -68,15 +80,13 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <EditText
-            android:id="@+id/subtitle_editText"
+            android:id="@+id/edit_subtitle_editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textMultiLine"
             android:gravity="start|top"
             android:hint="subtitle"
+            android:inputType="textMultiLine"
             android:textColorHint="@color/text" />
-
-
 
 
     </LinearLayout>

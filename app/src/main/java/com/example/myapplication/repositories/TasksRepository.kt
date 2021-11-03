@@ -5,10 +5,12 @@ import android.content.Context
 import android.widget.DatePicker
 import androidx.fragment.app.DialogFragment
 import androidx.room.Room
+import com.example.myapplication.database.ITasksDao
 import com.example.myapplication.database.TasksDatabase
 import com.example.myapplication.database.model.TasksListModel
 import java.lang.Exception
-
+// single source of truth for all app data, clean API for UI to
+//communicate with
 private const val DATABASE_NAME = "tasks-database"
 class TasksRepository(context: Context) {
     private val database: TasksDatabase =
@@ -18,10 +20,11 @@ class TasksRepository(context: Context) {
             DATABASE_NAME
         ).fallbackToDestructiveMigration().build()
     private val itasksDao = database.iTasksDao()
-    fun getTasks() = itasksDao.getTask()
-    suspend fun addTasks(tasksListModel: TasksListModel) = itasksDao.addTask(tasksListModel)
-    suspend fun updateTasks(tasksListModel: TasksListModel) = itasksDao.updateTask(tasksListModel)
-    suspend fun deleteTasks(tasksListModel: TasksListModel) = itasksDao.daleteTask(tasksListModel)
+    fun getTasks() = itasksDao.getTask() // to get task
+    fun filter(category:String) = itasksDao.filtercategry(category) //1
+    suspend fun addTasks(tasksListModel: TasksListModel) = itasksDao.addTask(tasksListModel) // this function to add value to database
+    suspend fun updateTasks(tasksListModel: TasksListModel) = itasksDao.updateTask(tasksListModel) //this function to update value to database
+    suspend fun deleteTasks(tasksListModel: TasksListModel) = itasksDao.daleteTask(tasksListModel) // //this function to delete value from database
 
     //----------------------------------------------------------------------------------------------------
     companion object {
